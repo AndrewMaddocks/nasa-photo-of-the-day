@@ -7,7 +7,7 @@ const Nasa = () => {
   useEffect(() => {
     axios
       .get(
-        `https://api.nasa.gov/planetary/apod?api_key=LoWltxQU3RSihTpYACWWukuVeHtA1RMOJktY0RVy`
+        `https://api.nasa.gov/planetary/apod?api_key=LoWltxQU3RSihTpYACWWukuVeHtA1RMOJktY0RVy&date=2019-10-1`
       )
       .then(response => {
         console.log(response.data);

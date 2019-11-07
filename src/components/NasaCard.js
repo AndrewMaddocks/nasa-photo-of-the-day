@@ -4,7 +4,17 @@ const NasaCard = props => {
   return (
     <div>
       <div>
-        <img src={props.Info.url} alt="a pic" />
+        {props.Info.media_type === "video" ? (
+          <iframe
+            title="video of something"
+            width="1080"
+            height="720"
+            alt="space stuff"
+            src={props.Info.url}
+          />
+        ) : (
+          <img src={props.Info.url} alt="a pic" />
+        )}
       </div>
 
       <div>
